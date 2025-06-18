@@ -26,10 +26,10 @@ export default function InvestorPage() {
         className="max-w-4xl text-center space-y-6"
       >
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-          LetsPing <span className="text-violet-600">Investor One‑Pager</span>
+          LetsPing <span className="text-violet-600">Investor One Pager</span>
         </h1>
         <p className="text-neutral-600 text-lg sm:text-xl max-w-2xl mx-auto">
-          Voice‑first social infrastructure redefining connection for the <strong>loneliest generation</strong>. Our AI platform delivers <strong>10× higher‑quality conversations</strong> through a single, low‑friction call—built for <em>interns, transplants, founders, and modern nomads</em>.
+          Voice-first social infrastructure redefining connection for the <strong>loneliest generation</strong>. Our AI platform delivers <strong>10× higher‑quality conversations</strong> through a single, low‑friction call—built for <em>interns, transplants, founders, and modern nomads</em>.
         </p>
         <motion.div
           initial="hidden"
@@ -55,8 +55,8 @@ export default function InvestorPage() {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-sm text-neutral-700">
             <li><strong>Swipe fatigue:</strong> Dating and friend apps are transactional and exhausting.</li>
-            <li><strong>Loneliness crisis:</strong> 39% of Gen Z feel chronically alone (CDC 2023).</li>
-            <li><strong>No easy on‑ramps:</strong> New grads & relocators struggle to form real‑world bonds.</li>
+            <li><strong>Loneliness crisis:</strong> 39% of Gen Z feel chronically alone (CDC 2023).</li>
+            <li><strong>No easy on-ramps:</strong> New grads & relocators struggle to form real-world bonds.</li>
           </ul>
         </div>
         <div className="space-y-4 bg-white p-6 rounded-2xl border border-neutral-200 shadow-sm hover:shadow-md transition">
@@ -64,7 +64,7 @@ export default function InvestorPage() {
             <Users className="w-5 h-5 text-sky-500" /> Our Solution
           </h2>
           <ul className="list-disc list-inside space-y-2 text-sm text-neutral-700">
-            <li><strong>AI voice onboarding</strong> unlocks personality in 15 min—no bios, no swipes.</li>
+            <li><strong>AI voice onboarding</strong> unlocks personality in 15 min—no bios, no swipes.</li>
             <li><strong>Wing concierge</strong> connects, schedules, and nudges—turning chats into IRL meets.</li>
             <li><strong>Max 5 convos</strong> keeps focus, reduces ghosting, builds intention.</li>
           </ul>
@@ -97,7 +97,7 @@ export default function InvestorPage() {
       >
         <h2 className="text-2xl font-semibold">Why Now</h2>
         <p className="text-neutral-700 text-base">
-          Gen Z is the <strong>loneliest generation on record</strong>, yet they’re the <strong>most fluent in voice tech</strong> (TikTok, AirPods, Discord). 
+          Gen Z is the <strong>loneliest generation on record</strong>, yet they're the <strong>most fluent in voice tech</strong> (TikTok, AirPods, Discord). 
           With the rise of <strong>AI-driven agents</strong> and declining trust in swipe-based apps, the time is right to reshape how people meet.
         </p>
       </motion.div>
@@ -149,7 +149,7 @@ export default function InvestorPage() {
       >
         <h2 className="text-2xl font-semibold">Monetization</h2>
         <p className="text-neutral-700 text-base">
-          Freemium onboarding • Boosted calls • Wing Pro (unlimited concierge) • Curated city events • B2B AI APIs for community platforms.
+          Freemium onboarding • Boosted calls • Wing Pro (unlimited concierge) • Curated city events • B2B AI APIs for community platforms.
         </p>
       </motion.div>
 
@@ -165,8 +165,8 @@ export default function InvestorPage() {
         <div className="grid sm:grid-cols-3 gap-6 text-sm">
             {[
                 {
-                name: "Vladimir Gutierrez",
-                role: "Full‑stack Engineer / Product",
+                name: "Vladimir Gutierrez",
+                role: "Full-stack Engineer / Product",
                 blurb: (
                     <>
                     CS @ <strong>NJIT</strong><br />Space Systems Eng @ <strong>Planet Labs</strong><br />
@@ -175,7 +175,7 @@ export default function InvestorPage() {
                 ),
                 },
                 {
-                name: "Shreelekha Revankar",
+                name: "Shreelekha Revankar",
                 role: "AI / ML Researcher",
                 blurb: (
                     <>
@@ -185,7 +185,7 @@ export default function InvestorPage() {
                 ),
                 },
                 {
-                name: "Sarah Jeong",
+                name: "Sarah Jeong",
                 role: "Design & Social UX",
                 blurb: (
                     <>
@@ -217,9 +217,9 @@ export default function InvestorPage() {
         variants={fadeUp}
         className="w-full max-w-5xl text-center space-y-6 bg-gradient-to-r from-violet-50 to-violet-100 border border-violet-200 rounded-3xl p-10 shadow-md"
       >
-        <h3 className="text-2xl font-semibold">We’re raising pre‑seed</h3>
+        <h3 className="text-2xl font-semibold">We're raising pre-seed</h3>
         <p className="text-neutral-700 text-base">
-          If redefining how humans meet excites you, let’s talk. We’re seeking strategic angels and funds who believe voice is the next frontier of social tech.
+          If redefining how humans meet excites you, let's talk. We're seeking strategic angels and funds who believe voice is the next frontier of social tech.
         </p>
         <Link
           href="mailto:founders@letsping.co?subject=Investing%20in%20LetsPing"

@@ -105,7 +105,7 @@ export default function Home() {
 
         <p className="text-xs text-neutral-500">
           <PhoneCall className="inline-block w-4 h-4 mr-1" />
-          It’s free, private, and takes less than 30 seconds.
+          It's free, private, and takes less than 30 seconds.
         </p>
       </motion.div>
 
@@ -157,7 +157,7 @@ export default function Home() {
       {/* CTA */}
       <motion.div className="text-center max-w-3xl space-y-6">
         <h2 className="text-xl sm:text-2xl font-semibold text-neutral-900">
-          This isn’t a dating app. It’s a connection protocol.
+          This isn't a dating app. It's a connection protocol.
         </h2>
         <p className="text-neutral-600 text-sm sm:text-base">
           Ping helps people connect through their voice — because who you are comes through in how you speak, not how you swipe. <br />

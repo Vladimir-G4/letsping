@@ -19,25 +19,24 @@ export default function WaitlistPage() {
   const [error, setError] = useState("");
   const [place, setPlace] = useState<number | null>(null);
 
+  useEffect(() => {
+    const storedPhone = localStorage.getItem("ping_user_phone");
+    if (storedPhone) {
+      supabase
+        .from("waitlist")
+        .select("place")
+        .eq("phone", storedPhone)
+        .maybeSingle()
+        .then(({ data }) => {
+          if (data) {
+            setPlace(data.place);
+            setSubmitted(true);
+          }
+        });
+    }
+  }, []);
+
   const handleSubmit = async (e: any) => {
-
-    useEffect(() => {
-        const storedPhone = localStorage.getItem("ping_user_phone");
-        if (storedPhone) {
-          supabase
-            .from("waitlist")
-            .select("place")
-            .eq("phone", storedPhone)
-            .maybeSingle()
-            .then(({ data }) => {
-              if (data) {
-                setPlace(data.place);
-                setSubmitted(true);
-              }
-            });
-        }
-    }, []);
-
     e.preventDefault();
     setError("");
 
@@ -82,6 +81,7 @@ export default function WaitlistPage() {
       transition: { delay: 0.1 * i, duration: 0.6, ease: "easeOut" },
     }),
   };
+
 
   return (
     <section className="min-h-screen w-full flex items-center justify-center px-6 py-24 bg-[#faf9f7] text-neutral-900">
