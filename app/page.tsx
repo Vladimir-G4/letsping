@@ -210,16 +210,6 @@ export default function Home() {
               </div>
               <p className="text-[10px] text-neutral-400 text-right">Early voices shape what comes next. We're grateful.</p>
             </div>
-            <style jsx>{`
-              @keyframes pingOnce {
-                0% { transform: scale(1); opacity: 0.8 }
-                60% { transform: scale(1.35); opacity: 0 }
-                100% { transform: scale(1.35); opacity: 0 }
-              }
-              .animate-pingOnce {
-                animation: pingOnce 1.2s cubic-bezier(0, 0, 0.2, 1);
-              }
-            `}</style>
           </motion.div>
         ) : (
           <Link
