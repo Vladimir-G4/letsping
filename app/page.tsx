@@ -14,7 +14,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_API!
 );
 
-export function InviteButton() {
+function InviteButton() {
   const [copied, setCopied] = useState(false);
   const sharePayload = {
     title: "Ping — voice-first connections",

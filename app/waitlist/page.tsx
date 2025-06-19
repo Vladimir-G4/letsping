@@ -19,7 +19,7 @@ const supabase = createClient(
 //  Components
 // ─────────────────────────────────────────────────────────────
 
-export function InviteButton() {
+function InviteButton() {
     const [copied, setCopied] = useState(false);
     const sharePayload = {
       title: "Ping — voice-first connections",
