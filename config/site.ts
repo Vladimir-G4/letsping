@@ -1,28 +1,24 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Ping",
+  description: "Voice-first connection, powered by Wing — your human-first AI concierge. Built for presence, not profiles.",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Waitlist",
+      href: "/waitlist",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Invest",
+      href: "/invest",
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "FAQ",
+      href: "/faq",
     },
   ],
   navMenuItems: [
@@ -31,28 +27,16 @@ export const siteConfig = {
       href: "/profile",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Wing",
+      href: "/wing",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Conversations",
+      href: "/conversations",
     },
     {
       label: "Settings",
       href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
     },
     {
       label: "Logout",
@@ -60,10 +44,10 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/Vladimir-G4/ping",
+    twitter: "https://twitter.com/letsping",
+    docs: "https://letsping.co/docs",
+    discord: "https://discord.gg/yourcommunity",
+    sponsor: "mailto:founders@letsping.co",
   },
 };

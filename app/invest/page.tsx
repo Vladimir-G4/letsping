@@ -24,23 +24,30 @@ export default function InvestorPage() {
         animate="visible"
         variants={fadeUp}
         className="max-w-4xl text-center space-y-6"
-      >
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-          LetsPing <span className="text-violet-600">Investor One Pager</span>
-        </h1>
-        <p className="text-neutral-600 text-lg sm:text-xl max-w-2xl mx-auto">
-          Voice-first social infrastructure redefining connection for the <strong>loneliest generation</strong>. Our AI platform delivers <strong>10× higher‑quality conversations</strong> through a single, low‑friction call—built for <em>interns, transplants, founders, and modern nomads</em>.
-        </p>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          custom={1}
-          variants={fadeUp}
-          className="text-center text-neutral-600 text-sm sm:text-base italic max-w-xl mx-auto"
         >
-          We're building the voice-based social layer Gen Z actually trusts—human-first, AI-augmented, and designed for depth.
+        {/* ── Headline ───────────────────────────────────── */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+            Ping <span className="text-sky-600">Investor Brief</span>
+        </h1>
+
+        {/* ── One-liner ──────────────────────────────────── */}
+        <p className="text-neutral-700 text-lg sm:text-xl max-w-2xl mx-auto">
+            Voice-native social infrastructure for a generation done with swipes.  
+            One 15-minute call → AI-curated intros → 10× deeper conversations.
+        </p>
+
+        {/* ── Positioning tagline ───────────────────────── */}
+        <motion.p
+            initial="hidden"
+            animate="visible"
+            custom={1}
+            variants={fadeUp}
+            className="italic text-neutral-600 text-sm sm:text-base max-w-xl mx-auto"
+        >
+            Human-first. Privacy-forward. Designed for compounding network effects, not endless scrolling.
+        </motion.p>
         </motion.div>
-      </motion.div>
+
 
       {/* ── PROBLEM & SOLUTION ─────────────────────── */}
       <motion.div
@@ -102,42 +109,96 @@ export default function InvestorPage() {
         </p>
       </motion.div>
 
-      {/* ── ROADMAP ────────────────────────────────── */}
-      <motion.div
+      {/* ── ROADMAP ───────────────────────────── */}
+        <motion.div
         initial="hidden"
         animate="visible"
         custom={7}
         variants={fadeUp}
-        className="w-full max-w-4xl text-center space-y-4"
-      >
-        <h2 className="text-2xl font-semibold">Roadmap Highlights</h2>
-        <ul className="grid sm:grid-cols-2 gap-4 text-left text-neutral-700 text-sm list-disc list-inside">
-          <li><strong>Q3 2025:</strong> Closed beta launch (invite-only) in SF & NYC</li>
-          <li><strong>Q4 2025:</strong> Wing Pro, AI call scheduling, curated IRL events</li>
-          <li><strong>Q1 2026:</strong> Android release + strategic B2B integrations</li>
-          <li><strong>Q2 2026:</strong> National rollout and campus ambassador program</li>
-        </ul>
-      </motion.div>
+        className="w-full max-w-5xl text-center space-y-8"
+        >
+        <div className="space-y-3">
+            <h2 className="text-3xl font-bold text-neutral-900">What’s Next for Ping</h2>
+            <p className="text-neutral-600 text-sm sm:text-base max-w-xl mx-auto">
+            We’re laying the foundation for voice-first social—grounded in trust, presence, and purpose.
+            </p>
+        </div>
 
-      {/* ── TRACTION ───────────────────────────────── */}
-      <motion.div
+        <div className="grid sm:grid-cols-2 gap-6 text-left">
+            {[
+            {
+                quarter: "Q3 2025",
+                title: "Beta Waitlist Expands",
+                desc: "Rolling invites across SF and NYC intern hubs. Focused user onboarding begins.",
+            },
+            {
+                quarter: "Q4 2025",
+                title: "First Calls Go Live",
+                desc: "Wing begins voice introductions. Feedback loop opens for concierge tuning.",
+            },
+            {
+                quarter: "Q1 2026",
+                title: "Mobile-first Iteration",
+                desc: "Refining UX based on early call behavior. iOS polish, Android groundwork.",
+            },
+            {
+                quarter: "Q2 2026",
+                title: "City Pods + Micro-Communities",
+                desc: "First real-life meetups powered by shared voice intent and local serendipity.",
+            },
+            ].map(({ quarter, title, desc }) => (
+            <div
+                key={quarter}
+                className="bg-white border border-neutral-200 p-5 rounded-xl shadow-sm hover:shadow-md transition"
+            >
+                <p className="text-xs text-neutral-500 font-medium uppercase tracking-wider mb-1">{quarter}</p>
+                <h3 className="text-md font-semibold text-neutral-900">{title}</h3>
+                <p className="text-sm text-neutral-600 mt-1">{desc}</p>
+            </div>
+            ))}
+        </div>
+        </motion.div>
+
+        {/* ── TRACTION ───────────────────────────── */}
+        <motion.div
         initial="hidden"
         animate="visible"
-        custom={3}
+        custom={8}
         variants={fadeUp}
-        className="grid sm:grid-cols-3 gap-6 w-full max-w-5xl"
-      >
-        {[
-          { label: "Waitlist sign‑ups", value: "2,300+" },
-          { label: "Avg. call completion", value: "92%" },
-          { label: "Convo acceptance", value: "74%" },
-        ].map(({ label, value }) => (
-          <div key={label} className="bg-white p-6 rounded-2xl border border-neutral-200 shadow-sm text-center hover:shadow-md transition">
-            <p className="text-3xl font-bold text-violet-600 leading-none tracking-tight">{value}</p>
-            <p className="text-xs text-neutral-500 mt-2 uppercase tracking-wide">{label}</p>
-          </div>
-        ))}
-      </motion.div>
+        className="w-full max-w-5xl mt-20"
+        >
+        <h2 className="text-center text-2xl font-semibold text-neutral-900 mb-6">Early Signals</h2>
+
+        <div className="grid sm:grid-cols-3 gap-6">
+            {[
+            {
+                label: "Waitlist sign‑ups",
+                value: "1,420",
+                hint: "Mostly SF/NYC interns + intros from existing users",
+            },
+            {
+                label: "Avg. ref share rate",
+                value: "2.1×",
+                hint: "Every join sparks two more",
+            },
+            {
+                label: "Initial voice call interest",
+                value: "85%",
+                hint: "Opted-in to Wing’s call within 3 days",
+            },
+            ].map(({ label, value, hint }) => (
+            <div
+                key={label}
+                className="bg-white p-6 rounded-2xl border border-neutral-200 shadow-sm text-center hover:shadow-md transition"
+            >
+                <p className="text-4xl font-bold text-sky-600 leading-none tracking-tight">{value}</p>
+                <p className="text-sm font-medium text-neutral-700 mt-2">{label}</p>
+                <p className="text-xs text-neutral-400 italic mt-1">{hint}</p>
+            </div>
+            ))}
+        </div>
+        </motion.div>
+
 
       {/* ── BUSINESS MODEL ─────────────────────────── */}
       <motion.div
